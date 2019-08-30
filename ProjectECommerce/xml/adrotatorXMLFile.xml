@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Advertisements> 
+  <Ad> 
+    <ImageUrl>~/images/ios.png</ImageUrl> 
+    <NavigateUrl>http://apple.com</NavigateUrl> 
+    <AlternateText>please visit http://apple.com</AlternateText> 
+    <Impressions>9</Impressions> 
+  </Ad> 
+  <Ad> 
+    <ImageUrl>~/images/microsoft.png</ImageUrl> 
+    <NavigateUrl>https://www.microsoft.com</NavigateUrl> 
+    <AlternateText>Please visit microsoft.com</AlternateText> 
+    <Impressions>20</Impressions> 
+  </Ad> 
+  <Ad> 
+    <ImageUrl>~/images/android.png</ImageUrl> 
+    <NavigateUrl>http://www.playstore.com</NavigateUrl> 
+    <AlternateText>Please visit http://playstore.com</AlternateText> 
+    <Impressions>40</Impressions> 
+  </Ad> 
+</Advertisements> 

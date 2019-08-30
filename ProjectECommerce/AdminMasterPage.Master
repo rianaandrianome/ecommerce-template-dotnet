@@ -1,0 +1,86 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="AdminMasterPage.master.vb" Inherits="ProjectECommerce.AdminMasterPage"%>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+ 
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table width="100%">
+            <%--HEADER--%>
+            <tr class="mainColor"> 
+                <td>
+                    <asp:Button ID="btnBlue" runat="server" Text="Blue" onclick="btnBlue_Click"/>
+                    <asp:Button ID="btnRed" runat="server" Text="Red" OnClick="btnRed_Click"/>
+                    <asp:Button ID="btnDefault" runat="server" Text="Normal" onclick="btnDefault_Click"/>
+                    <asp:Label ID="lblWelcome" runat="server" Text=""></asp:Label>
+                    <asp:ImageButton ID="ImageButtonEditProfile" runat="server" ImageUrl="~/images/editProfile.jpg" Width="60px" Height="44px" ImageAlign="Right"/>
+                    
+                </td> 
+            </tr> 
+           
+            <tr>
+                <td colspan="2">
+                    <asp:ImageButton ID="ImageButtonSign" runat="server" Width="100px" Height="25px"/>
+                </td>
+            </tr>
+
+            <%--MENU--%>
+            <tr>
+                <td>
+                    <asp:Menu ID="Menu1" runat="server" BackColor="#c0c0c0" DynamicHorizontalOffset="2" ForeColor="#ffffff" Orientation="Horizontal" StaticSubMenuIndent="10px" Font-Bold="true" Font-Names="Levenim MT" Width="100%"> 
+
+                         <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" /> 
+                         <DynamicHoverStyle BackColor="#c0c0c0" ForeColor="#666666" /> 
+                        <DynamicMenuStyle BackColor="#B5C7DE" /> 
+                        <StaticSelectedStyle BackColor="#507CD1" /> 
+                        <DynamicSelectedStyle BackColor="#507CD1" /> 
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" /> 
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/AdminHomePage.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/AdminUserPage.aspx" Text="User" Value="User"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/AdminProductPage.aspx" Text="Product" Value="Product"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/AdminCategoryPage.aspx" Text="Category" Value="Category"></asp:MenuItem>
+                        </Items>
+
+                    </asp:Menu>
+                </td>
+            </tr>
+
+            
+            <%--CONTENT--%>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                 </asp:ContentPlaceHolder>
+                </td>
+                 
+            </tr>
+
+            <%--FOOTER--%>
+            <tr class="mainColor">
+                <td>
+                     All rigth Reserved: Copyrigth Andrianome Riana 2017
+                    <br />
+                    <br />
+                    Contacts <br />
+                    Facebook
+                    Twitter
+                    Gmail
+                </td>
+            </tr>
+
+        </table>
+
+
+    </div>
+    </form>
+</body>
+
+</html>
