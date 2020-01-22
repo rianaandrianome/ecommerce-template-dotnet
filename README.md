@@ -18,3 +18,4 @@ Hit the Run button in your VStudio IDE to run the project on your browser.
 
 Use the administration interface to add, update, and delete your products. 
 Visit the aspx pages to modify the views, and the vb code-behind files to adjust the functionalities according to your needs. 
+
